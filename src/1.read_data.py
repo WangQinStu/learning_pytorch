@@ -4,9 +4,6 @@ import os
 
 from torch.utils.data import Dataset
 
-from 资料包.源代码.P9_transforms import bees_dataset
-
-
 class MyData(Dataset):
     def __init__(self, root_dir, label_dir):
         self.root_dir = root_dir
