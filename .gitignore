@@ -1,0 +1,13 @@
+# dataset
+dataset/
+
+# tensorboard logs
+tensorboard_log/
+
+# python cache
+__pycache__/
+*.pyc
+
+# pytorch checkpoints
+*.pth
+*.pt
