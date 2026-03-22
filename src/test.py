@@ -15,3 +15,4 @@ targets = torch.tensor([0,1])
 
 print('预测值=实际值？',(preds == targets))
 print(f'预测值和实际值有{ (preds == targets).sum() }个相符')
+

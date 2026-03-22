@@ -18,8 +18,8 @@ print('训练设备：', device)
 writer = SummaryWriter('./logs_network')
 
 # 1. 准备数据集
-train_dataset = torchvision.datasets.CIFAR10('./dataset',train=True,transform=torchvision.transforms.ToTensor(),download=True)
-test_dataset = torchvision.datasets.CIFAR10('./dataset',train=False,transform=torchvision.transforms.ToTensor(),download=True)
+train_dataset = torchvision.datasets.CIFAR10('./dataset',train=True,transform=torchvision.transforms.ToTensor(),download=True) # train=True：选择数据集的训练部分
+test_dataset = torchvision.datasets.CIFAR10('./dataset',train=False,transform=torchvision.transforms.ToTensor(),download=True) # train=False：选择数据集的测试部分
 
 train_dataset_size = len(train_dataset)
 test_dataset_size = len(test_dataset)
